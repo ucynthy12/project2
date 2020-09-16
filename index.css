@@ -35,3 +35,45 @@ body{
     text-decoration: none;
     font-weight: bold;
 }
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    margin:5px;
+    background-color: cornflowerblue;
+}
+
+@media screen and (max-width:1024px){  
+    .nav-menu{
+         width: 60%;
+}
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-menu{
+        position: absolute;
+        right: 0px;
+        height:92vh;
+        top:8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+
+    }
+    .nav-menu li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+.nav-menu{
+    transform: translateX(0);
+}
