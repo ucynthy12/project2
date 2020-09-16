@@ -1,0 +1,48 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    background: #1c1c1c;
+}
+.nav-bar{
+    padding:40px 70px;
+}
+.nav-bar h4{
+    text-align: center;
+    color:red;
+    font-family: 'Homemade Apple', cursive;
+    font-size:30px;
+    letter-spacing: 5px;
+}
+.nav-menu{
+    flex: 1;
+    margin:10px 0;
+}
+.nav-menu ul{
+    display:inline;
+    margin-left: 200px;
+}
+.nav-menu ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 12px 18px;
+}
+.nav-menu ul li:after{
+    content: '';
+    width: 0;
+    height:2px;
+    background: #c1c1c1;
+    display: block;
+    margin:auto;
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #c1c1c1;
+}
