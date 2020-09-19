@@ -7,13 +7,14 @@
 
 body{
     height:100%;
-    padding: 5%;
-    background: linear-gradient(rgba(26,188,156,0.7),rgba(250, 122, 108, 0.7));
+    padding: 2%;
+    background: linear-gradient(white,gray);
 }
 .body{
-    background: aquamarine;
+    background: rgb(251, 252, 252);
     box-sizing: border-box;
-    border: 1px solid aquamarine;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 10px;
 }
 .container{
     display: flex;
@@ -22,15 +23,9 @@ body{
     min-height: 8vh;
     font-family: 'Homemade Apple', cursive;
     position: relative;
-
+    background: aquamarine;
 }
 
-.background-picture{
-    background:url(https://www.janknippers.com/wp-content/uploads/2018/05/2_kigali_SPS_02_110_5572.jpg);
-    display: block;
-    width: 100%;
-    height: 600px;
-}
 .nav-bar{
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -49,66 +44,96 @@ body{
     text-decoration: none;
     font-weight: bold;
 }
-
+/* about me section */
 #about{
-    position: absolute;
-    top: 128%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 750px;
-    padding: 30px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: 0 15px 50px rgba(0,0,0,.2);
-    background-color: rgb(7, 75, 75);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: gray;
 }
 .picture{
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     background: url(image/cynthia.jpg);
     background-size: cover;
     border-radius: 50%;
-    float: left;
     shape-outside: circle();
-    margin: 40px 30px 10px 0;
-    padding-top:20px;
+    margin:25px 30px;
+    flex-basis: 20%;
 }
-#about h2{
-    color: rgb(79, 248, 192);
-    padding-bottom:20px;
-    font-size: 50px;
+.aboutme{
+flex-basis: 40%;
+}
+.aboutme h1{
     font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    color:aquamarine;
 }
-#about p{
-    padding-top: 10px;
-    font-size: 22px;
-    color: azure;
+.aboutme p{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 20px;
+}
+/* contact section */
+ #contacts ul{
+display: flex;
+height: 230px;
+background: gray;
+justify-content: space-around;
+padding: 30px;
+list-style: none;
+}
+ #contacts a{
+     color: aquamarine;
+ }
 
-}
-.project{
-    display: flex;
-    margin-top: 100px;
-    background-color: rgb(7, 75, 75);
-    width: 60%;
-    justify-content: center;
-    border-radius: 10px;
-    box-sizing:border-box;
-    margin-left: 250px;
-}
 
-.project-bar{
+/* background header */
+.background-picture{
+    background:url(https://www.janknippers.com/wp-content/uploads/2018/05/2_kigali_SPS_02_110_5572.jpg);
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-size: 100%;
+    background-size: cover;
+}
+.description{
+    position: absolute;
+    top: 50%;
+    left:15%;
+    transform: translateY(-50%);
+    z-index: 2;
+    font-family: 'Merriweather', serif;
+}
+.description h1{
+    color:#ab9e9e;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
     text-align: center;
-    margin-top: 430px;
-    background-color:aquamarine;
-    min-height:8vh;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: rubberBand;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
-.project-bar h4{
-    font-size: 30px;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: rgb(6, 6, 141);
+.description p{
+ font-size: 20px;
+ margin: 0;
+ margin-top: 10px;
+ letter-spacing: 6px;
+ text-align: center;
+ color:#ab9e9e ;
 }
+.overlay{
+    background:#000000c2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 
 
 @media screen and (max-width:1024px){  
