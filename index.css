@@ -11,7 +11,7 @@ body{
     background: linear-gradient(white,gray);
 }
 .body{
-    background: rgb(251, 252, 252);
+    background:#cce6ff;
     box-sizing: border-box;
     border: 1px solid rgb(231, 231, 231);
     border-radius: 10px;
@@ -23,7 +23,7 @@ body{
     min-height: 8vh;
     font-family: 'Homemade Apple', cursive;
     position: relative;
-    background: aquamarine;
+    background:#99ccff;
 }
 
 .nav-bar{
@@ -39,6 +39,7 @@ body{
 }
 .nav-menu li{
     list-style: none;
+
 }
 .nav-menu a{
     text-decoration: none;
@@ -49,7 +50,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    background: gray;
+    /* background: rgb(255, 253, 253); */
 }
 .picture{
     width: 180px;
@@ -67,25 +68,132 @@ flex-basis: 40%;
 .aboutme h1{
     font-family: 'Poppins', sans-serif;
     letter-spacing: 4px;
-    color:aquamarine;
+    color:rgb(22, 24, 23);
 }
 .aboutme p{
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 20px;
 }
+
 /* contact section */
  #contacts ul{
 display: flex;
 height: 230px;
-background: gray;
-justify-content: space-around;
+/* background: rgb(151, 149, 149); */
+justify-content: space-evenly;
 padding: 30px;
 list-style: none;
 }
- #contacts a{
-     color: aquamarine;
- }
 
+ #contacts a{
+     color:purple;
+
+ }
+ #contacts h1{
+     margin-top: 10px;
+ }
+ 
+/* video */
+#project{
+/* background-color :rgb(227, 252, 244); */
+border: 1px solid gray;
+}
+button{
+    margin-left:57%;
+    animation: wobble;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-color: greenyellow;
+    border-radius: 5px;
+    padding: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercases;
+}
+
+video{
+    display: block;
+    margin: auto;
+    width: 700px;
+    width: 500px;
+}
+.video{
+    margin: 20px;
+}
+#project h4, #skills h1, #contacts h1{
+   width: 100%;
+   padding-left:40%;
+   padding-top: 10px;
+   padding-bottom: 5px;
+   font-size: 25px;
+   font-family: 'Poppins', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   /* background:url(https://www.janknippers.com/wp-content/uploads/2018/05/2_kigali_SPS_02_110_5572.jpg); */
+   background: #a9cbeb;
+   color: #350066;
+}
+#project p,#contacts p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: rgb(8, 8, 8);
+}
+
+.logo1{
+    color:palevioletred;
+    font-family:'Freckle Face', cursive;
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.logo{
+    color: purple;
+    font-family: 'Butterfly Kids', cursive;
+    font-size: 20px;
+    font-weight: 600px;
+}
+/* skills */
+/* #skills{
+    /* background: black; */
+/* } */ 
+#skills h3{
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-left: 25%;
+    color: rgb(32, 31, 31);
+    font-family: 'Kumbh Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.container1{
+    width: 50%;
+    background-color: #D2D7D3;
+    margin-left: 25%;
+    border-radius: 5px;
+    
+}
+.skills{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.html{
+    width: 90%;
+    background-color: #4caf50;
+}
+
+.css{
+    width: 70%;
+    background-color:#03a9f4;
+}
+
+.js{
+    width: 20%;
+    background-color: #f44336;
+}
 
 /* background header */
 .background-picture{
@@ -105,7 +213,7 @@ list-style: none;
     font-family: 'Merriweather', serif;
 }
 .description h1{
-    color:#ab9e9e;
+    color:#4da6ff;    ;
     font-size: 60px;
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -122,7 +230,7 @@ list-style: none;
  margin-top: 10px;
  letter-spacing: 6px;
  text-align: center;
- color:#ab9e9e ;
+ color:#fac1c1 ;
 }
 .overlay{
     background:#000000c2;
@@ -173,46 +281,5 @@ list-style: none;
     height: 50px;
     background: url(image/cynthia.jpg);
     background-size: cover;
-    
 }
-
-}
-
-#skills h1{
-    text-align: center;
-}
-#skills{
-    margin-top: 10%;
-}
-#skills h3{
-    margin-bottom: 5px;
-    margin-left: 25%;
-}
-
-.container1{
-    width: 50%;
-    background-color: #D2D7D3;
-    margin-left: 25%;
-    border-radius: 5px;
-}
-.skills{
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    border-radius: 5px;
-}
-.html{
-    width: 90%;
-    background-color: #4caf50;
-}
-
-.css{
-    width: 70%;
-    background-color:#03a9f4;
-}
-
-.js{
-    width: 20%;
-    background-color: #f44336;
 }
