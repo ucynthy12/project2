@@ -11,9 +11,9 @@ body{
     background: linear-gradient(white,gray);
 }
 .body{
-    background:#cce6ff;
+    /* background:#cce6ff; */
     box-sizing: border-box;
-    border: 1px solid rgb(231, 231, 231);
+    /* border: 1px solid rgb(231, 231, 231); */
     border-radius: 10px;
 }
 .container{
@@ -24,6 +24,7 @@ body{
     font-family: 'Homemade Apple', cursive;
     position: relative;
     background:#99ccff;
+
 }
 
 .nav-bar{
@@ -44,12 +45,34 @@ body{
 .nav-menu a{
     text-decoration: none;
     font-weight: bold;
+    position: relative;
+}
+.nav-menu a::before{
+    content: '';
+    position: absolute;
+    width:100%;
+    transform: scale(0);
+    height: 2px;
+    bottom:0;
+    left:0;
+    transform-origin: bottom right;
+    background: rgb(189, 39, 144);
+    transition: transform 0.5s ease-out;
+}
+.nav-menu a:hover::before{
+  transform: scale(1);
+  transform-origin: bottom left;
 }
 /* about me section */
 #about{
+    margin: 20px 130px;
     display:flex;
     align-items: center;
     justify-content: center;
+    text-align: justify;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background: rgb(233, 231, 231);
     /* background: rgb(255, 253, 253); */
 }
 .picture{
@@ -66,12 +89,13 @@ body{
 flex-basis: 40%;
 }
 .aboutme h1{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Metal Mania', cursive;
     letter-spacing: 4px;
     color:rgb(22, 24, 23);
+    text-align: center;
 }
 .aboutme p{
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 20px;
 }
 
@@ -96,7 +120,10 @@ list-style: none;
 /* video */
 #project{
 /* background-color :rgb(227, 252, 244); */
-border: 1px solid gray;
+    border: 1px solid gray;
+    margin: 0 20%;
+    border-radius: 10px;
+    background: rgb(233, 231, 231) ;
 }
 button{
     margin-left:57%;
@@ -136,7 +163,7 @@ video{
     text-align: center;
     padding-top: 30px;
     font-size: 20px;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Shadows Into Light', cursive;    
     color: rgb(8, 8, 8);
 }
 
@@ -154,22 +181,26 @@ video{
     font-weight: 600px;
 }
 /* skills */
-/* #skills{
-    /* background: black; */
-/* } */ 
+ 
+#skills{
+    border: 1px solid gray;
+    margin: 20px 20%;
+    border-radius: 10px;
+    background: rgb(233, 231, 231);
+}
 #skills h3{
     padding: 5px;
-    margin-bottom: 5px;
-    margin-left: 25%;
+    margin-bottom: 1px;
+    margin-left: 20%;
     color: rgb(32, 31, 31);
     font-family: 'Kumbh Sans', sans-serif;
     text-transform: uppercase;
 }
 
 .container1{
-    width: 50%;
-    background-color: #D2D7D3;
-    margin-left: 25%;
+    width: 60%;
+    background-color: #2c2c2c;
+    margin-left: 20%;
     border-radius: 5px;
     
 }
@@ -193,13 +224,14 @@ video{
 .js{
     width: 20%;
     background-color: #f44336;
+    margin-bottom: 5px;
 }
 
 /* background header */
 .background-picture{
     background:url(https://www.janknippers.com/wp-content/uploads/2018/05/2_kigali_SPS_02_110_5572.jpg);
     width: 100%;
-    height: 500px;
+    height: 400px;
     position: relative;
     background-size: 100%;
     background-size: cover;
@@ -215,12 +247,12 @@ video{
 .description h1{
     color:#4da6ff;    ;
     font-size: 60px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Piedra', cursive;
     margin: 0;
     text-align: center;
     display: inline-block;
     margin: 0 0.5rem;
-    animation: rubberBand;
+    animation: rotateInDownLeft;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
@@ -233,7 +265,7 @@ video{
  color:#fac1c1 ;
 }
 .overlay{
-    background:#000000c2;
+    background:#000000b8;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -241,7 +273,13 @@ video{
     left: 0;
     z-index: 1;
 }
-
+.footer{
+    border: 1px solid gray;
+    padding:0 2px;
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color:aquamarine;
+}
 
 
 @media screen and (max-width:1024px){  
@@ -264,22 +302,49 @@ video{
         width: 50%;
     }
 
-
+/* 
    #about{
        position: relative;
        width: 40%;
-       padding: 10px;
+     */
+/* 
+            
+   } */
+   #about{
+       position: relative;
    }
-   
   #about p{
     padding-top: 10px;
     font-size: 10px;
-    color: azure;
+    color: rgb(21, 22, 22);
 }
 .picture{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background: url(image/cynthia.jpg);
     background-size: cover;
+    border-radius: 50%;
+    shape-outside: circle();
+    margin:25px 30px;
+    /* flex-basis: 80%; */
+
 }
+.aboutme{
+    width: 70%;
+
+    }
+/* .aboutme h1{
+  font-size: ;
+}     */
+
+video{
+    width: 400px;
+    width: 300px;
+}
+
+#project h4, #skills h1, #contacts h1{
+     padding-left:32%;
+  
+}
+
 }
